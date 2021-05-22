@@ -10,8 +10,7 @@
 using namespace std;
 
 int main() {
-  std::string num_files, num_repetitions, archive_7zip, build_string,
-      create_filename;
+  std::string num_files, num_repetitions, archive_7zip, build_string, create_filename;
   char command[64];
   int repnum, filenum;
   std::fstream myfile;
@@ -50,7 +49,7 @@ int main() {
   cout << endl;
 
   myfile.open("NEST-0.TXT", ios::out);
-
+  
   build_string = "";
 
   if (myfile.is_open()) {
@@ -64,8 +63,7 @@ int main() {
 
   if (archive_7zip == "Y") {
     cout << "Adding File # 1 / " << num_files << endl;
-    snprintf(command, 128,
-             "7z a -mmt2 -mx=1 NESTFILES.ZIP NEST-0.TXT >> logfile.txt");
+    snprintf(command, 128, "7z a -mmt2 -mx=1 NESTFILES.ZIP NEST-0.TXT >> logfile.txt");
     system(command);
     system("rm NEST-0.TXT");
   }
@@ -83,11 +81,9 @@ int main() {
       myfile.close();
 
       if (archive_7zip == "Y") {
-        cout << "Adding File # " << std::to_string(filenum) << " / "
-             << num_files << endl;
+        cout << "Adding File # " << std::to_string(filenum) << " / " << num_files << endl;
         snprintf(command, 128,
-                 "7z a -mmt2 -mx=1 NESTFILES.ZIP NEST-%d.TXT >> logfile.txt",
-                 filenum);
+                 "7z a -mmt2 -mx=1 NESTFILES.ZIP NEST-%d.TXT >> logfile.txt", filenum);
         system(command);
         snprintf(command, 128, "rm NEST-%d.TXT", filenum);
         system(command);
@@ -102,15 +98,13 @@ int main() {
 
   if (archive_7zip == "N") {
 
-    cout << "And use " << create_filename
-         << " in the Intention Repeater to utilize the full NEST stack." << endl
-         << endl;
-
+  cout << "And use " << create_filename
+       << " in the Intention Repeater to utilize the full NEST stack." << endl
+       << endl;
+       
   } else {
-    cout << "And use NESTFILES.ZIP in the Intention Repeater to utilize the "
-            "full NEST stack."
-         << endl
-         << endl;
+  cout << "And use NESTFILES.ZIP in the Intention Repeater to utilize the full NEST stack." << endl
+       << endl;
   }
 
   return 0;
