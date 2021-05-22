@@ -1,5 +1,5 @@
 // Intention Repeater Nesting Utility created by Anthro Teacher aka Thomas
-// Sweet. May 22, 2021. Version 2.0
+// Sweet. May 22, 2021. Version 2.1
 
 #include <cstdio>
 #include <fstream>
@@ -15,7 +15,7 @@ int main() {
   int repnum, filenum, current_filenum;
   std::fstream myfile;
 
-  cout << "Intention Repeater Nesting File Creation Utility v2.0." << endl;
+  cout << "Intention Repeater Nesting File Creation Utility v2.1." << endl;
   cout << "Created by Anthro Teacher (5/22/2021)." << endl;
   cout << "Note: 10 reps per file X 100 files = 1 Googol Repetitions per "
           "iteration!"
