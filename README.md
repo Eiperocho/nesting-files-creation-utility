@@ -1,5 +1,7 @@
 # nesting-files-creation-utility
 
+Created by Anthro Teacher aka Thomas Sweet (5/23/2021).
+
 This will create a set of nested files, to give the Intention Repeater more power.
 
 1000X1000.ZIP = 1,000 files x 1,000 intentions per file.
