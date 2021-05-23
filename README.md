@@ -15,9 +15,12 @@ Repeater_Nesting_Utility.exe = Windows binary.
 
 You can run by double clicking on the .exe.
 
-It will create a file called NESTFILES.ZIP.
+If you chose to create a .zip archive, it will create a file called NESTFILES.ZIP.
 That is the file you put in the Intention Repeater. Make sure your intentions are in the INTENTIONS.TXT
 file before running the Repeater.
+
+If you didn't create a .zip archive, it will create a set of NEST-XXX.TXT files. So, to choose the power level you want,
+you would put NEST-50.TXT in the Repeater to run power level 50. You can go as high as you want.
 
 I will walk you through an example run.
 
