@@ -2,6 +2,11 @@
 
 Created by Anthro Teacher aka Thomas Sweet (5/23/2021).
 
+Please note v4.0 has a bug I have to work out:
+  
+  It only works if you choose Y for creating the .ZIP. For some reason it deletes all the files if you put N.
+  So it can't keep the files out, but if you need them you can extract them from the archive.
+
 This will create a set of nested files, to give the Intention Repeater more power.
 
 1000X1000.ZIP = 1,000 files x 1,000 intentions per file.
